@@ -1,0 +1,4 @@
+export const formatTime = (value: string | number) => new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(new Date(value));
+export const duration = (seconds: number) => { const n = Math.max(0, Math.floor(seconds)); return n >= 60 ? `${Math.floor(n / 60)}분 ${n % 60}초` : `${n}초`; };
+export function daysUntil(endExclusive: string, now = Date.now()) { const day = (x: number) => Math.floor((x + 9 * 3600000) / 86400000); return day(new Date(endExclusive).getTime() - 1) - day(now); }
+export function deadlineLabel(endExclusive: string) { return new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(new Date(endExclusive).getTime() - 1)); }

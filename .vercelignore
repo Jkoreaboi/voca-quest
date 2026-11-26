@@ -1,0 +1,14 @@
+# Vercel 업로드 제외 (앱 빌드·실행에 필요 없는 것, 원본 자료, 비밀값)
+.env
+.env.*
+!.env.example
+.data
+.next
+.next-*
+node_modules
+data
+qa
+tests
+outputs
+*.tsbuildinfo
+.vercel

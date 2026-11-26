@@ -1,0 +1,24 @@
+{
+  "code": "vmap-basic-b1",
+  "title": "Vocabulary Map Basic B-1",
+  "isSample": false,
+  "answerKeyFile": "data/source/[단어시험] Vocabulary Map Basic B-1_교사용.xlsx",
+  "crossCheckFile": "data/source/[단어시험] Vocabulary Map Basic B-1_학생용.xlsx",
+  "sheetPattern": "^Ch(\\d+)_Day\\s*(\\d+)\\s*$",
+  "unitCodeTemplate": "CH{ch2}-D{day}",
+  "unitLabelTemplate": "Ch{ch} Day {day}",
+  "headerRow": 4,
+  "firstDataRow": 5,
+  "blocks": [
+    { "name": "left", "no": "B", "english": "C", "pos": "D", "meaning": "E" },
+    { "name": "right", "no": "F", "english": "G", "pos": "H", "meaning": "I" }
+  ],
+  "expectedHeader": ["번호", "단어", "품사", "뜻"],
+  "confusablesColumn": null,
+  "synonymGroupsFile": "config/wordbooks/vmap-basic-b1.synonyms.json",
+  "notes": [
+    "교사용 파일이 정답 원본. 학생용 파일은 왼쪽 블록(1~20)은 영어만, 오른쪽 블록(21~40)은 뜻만 있는 시험지라 출제 원본으로 쓰지 않고 교차 확인에만 사용.",
+    "시트 1개(Ch{n}_Day {d}) = Unit 1개. ordinal 은 (Chapter, Day) 오름차순으로 1..N.",
+    "원본에 유사어·혼동어 열이 없으므로 confusablesColumn = null. 다른 교재에 혼동어 열이 있으면 열 문자(예: 'J')를 지정."
+  ]
+}

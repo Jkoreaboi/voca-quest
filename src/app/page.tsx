@@ -1,0 +1,1 @@
+export default function Home() { return <main className="app-shell"><header className="topbar"><span className="brand">VOCA QUEST</span></header><section className="panel narrow"><span className="eyebrow">YOUR ADVENTURE STARTS HERE</span><h1>선생님이 보내 주신<br/>시험 링크로 입장하세요.</h1><p className="muted">학교와 교재에 맞는 링크에서 단어 모험을 시작할 수 있어요. 별도의 로그인은 필요하지 않아요.</p></section></main>; }

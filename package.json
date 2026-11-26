@@ -1,0 +1,40 @@
+{
+  "name": "voca-quest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "db:local": "tsx scripts/local-db.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "import:words": "tsx scripts/import-words.ts",
+    "admin": "tsx scripts/admin.ts",
+    "test": "vitest run",
+    "e2e:smoke": "tsx scripts/e2e-smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.6.0",
+    "@electric-sql/pglite-socket": "0.3.0",
+    "exceljs": "4.4.0",
+    "next": "16.4.6",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.7",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.2",
+    "@types/react-dom": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vercel": "57.0.0",
+    "vitest": "5.1.2"
+  }
+}
